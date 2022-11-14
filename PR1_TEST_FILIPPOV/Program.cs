@@ -12,5 +12,9 @@ namespace PR1_TEST_FILIPPOV
         {
             Console.WriteLine("Hello World");
         }
+        public static void SayGoodBye()
+        {
+            Console.WriteLine("Goodbye World");
+        }
     }
 }

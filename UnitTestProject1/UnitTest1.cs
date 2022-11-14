@@ -21,5 +21,19 @@ namespace UnitTestProject1
                 Assert.AreEqual(Expected, result);
             }
         }
+
+        private const string Expected2 = "Goodbye World";
+        [TestMethod]
+        public void TestMethod2()
+        {
+            using (var sw2 = new StringWriter())
+            {
+                Console.SetOut(sw2);
+                PR1_TEST_FILIPPOV.Program.SayGoodBye();
+
+                var result2 = sw2.ToString().Trim();
+                Assert.AreEqual(Expected2, result2);
+            }
+        }
     }
 }
