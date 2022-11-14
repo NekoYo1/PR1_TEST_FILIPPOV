@@ -8,10 +8,9 @@ namespace PR1_TEST_FILIPPOV
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello world");
-            Console.ReadKey();
+            Console.WriteLine("Hello World");
         }
     }
 }
